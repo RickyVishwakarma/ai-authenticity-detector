@@ -758,7 +758,7 @@ function AboutPage() {
 
 export default function App() {
   const [page, setPage] = useState("landing");
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
   const [user, setUser] = useState(null);
   const [history, setHistory] = useState([]);
   const t = themes[mode];
