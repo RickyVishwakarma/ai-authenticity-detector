@@ -1,4 +1,5 @@
-const API_BASE = "/api";
+// Use environment variable or fallback to local
+const API_BASE = import.meta.env.VITE_API_URL || "/api";
 
 export async function analyzeText(text) {
   const response = await fetch(`${API_BASE}/analyze/text`, {
